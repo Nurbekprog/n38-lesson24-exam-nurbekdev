@@ -1,0 +1,9 @@
+@import "../utils/variables.scss";
+@mixin text-style ($ft-sz: 16px, $ft-wt: 400, $ln-ht: normal, $letter-sp: 0.64px, $color-black: $black-color, $font-fmly: Open Sans) {
+    font-size: $ft-sz;
+    font-weight: $ft-wt;
+    line-height: $ln-ht;
+    letter-spacing: $letter-sp;
+    color: $color-black;
+    font-family: $font-fmly;
+}

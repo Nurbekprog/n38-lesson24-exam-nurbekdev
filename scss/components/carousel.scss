@@ -1,0 +1,111 @@
+.galery {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    animation: carouselAnim 50s infinite alternate linear;
+}
+
+.entry {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    background: #fff;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .items {
+        animation: carouselAnim 35s infinite alternate linear;
+    }
+
+    @keyframes carouselAnim {
+        from {
+            transform: translate(0, 0);
+        }
+
+        to {
+            transform: translate(calc(-100% + (2 * 300px)));
+        }
+    }
+}
+
+
+
+
+
+@keyframes carouselAnim {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(calc(-100% + (5 * 300px)));
+    }
+}
+
+.galery .faders {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.faders .right,
+.faders .left {
+    background: linear-gradient(to right,
+            rgba(245, 245, 245, 1) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    z-index: 200;
+}
+
+.right {
+    right: 0;
+    background: linear-gradient(to left,
+            rgba(245, 245, 245, 1) 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+.galery {
+    &__left {
+        padding: 64px;
+
+        h6 {
+            @include text-style (23px, 700, 130%, 0.92px, $secondary-color, Cera Round Pro);
+            text-transform: capitalize;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            margin-top: 8px;
+            @include text-style (48px, 500, 130%, 1.44px, $secondary-color, Cera Round Pro);
+            text-transform: capitalize;
+        }
+
+        p {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            @include text-style (16px, 400, 175%, 0.64px, #aaa, Open Sans);
+        }
+
+        button {
+            @include text-style (16px, 700, 175%, 0.64px, $secondary-color, Cera Round Pro);
+            border: 1px solid $primariy-color;
+            border-radius: 100px;
+            padding: 8px 32px;
+            background-color: transparent;
+        }
+    }
+}

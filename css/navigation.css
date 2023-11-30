@@ -1,0 +1,12 @@
+.navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  color: #fff;
+  font-family: Open Sans;
+}
+.navbar-nav .nav-item .contact-us {
+  border: 2px solid white;
+  border-radius: 41px;
+}/*# sourceMappingURL=navigation.css.map */

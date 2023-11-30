@@ -1,0 +1,283 @@
+// @import "../layout/navigation.scss";
+@import "../layout/footer.scss";
+@import "../components/carousel.scss";
+
+.home {
+  &__left {
+    &__chase {
+      @include text-style(
+        23px,
+        700,
+        130%,
+        0.92px,
+        $white-color,
+        Cera Round Pro
+      );
+    }
+    h1 {
+      @include text-style(90px, 700, 130%, 3.6px, $white-color, Cera Round Pro);
+      text-transform: capitalize;
+      @media (max-width: 800px) {
+        font-size: 60px;
+      }
+      @media (max-width: 550px) {
+        font-size: 50px;
+      }
+    }
+    &__sit {
+      @include text-style(16px, 400, 175%, 0.64px, $white-color);
+    }
+
+    button {
+      @include text-style(
+        36px,
+        700,
+        175%,
+        0.64px,
+        $white-color,
+        Cera Round Pro
+      );
+      background: transparent;
+    }
+  }
+}
+
+.item {
+  margin-bottom: 40px;
+  &__text {
+    h3 {
+      @include text-style(24px, 700, normal, none, $primariy-color, Open Sans);
+    }
+  }
+}
+
+.home-caraousel {
+  padding-bottom: 120px;
+  h2 {
+    @include text-style(
+      48px,
+      500,
+      normal,
+      1.44px,
+      $primariy-color,
+      Cera Round Pro
+    );
+    text-transform: capitalize;
+    padding-bottom: 40px;
+  }
+}
+
+#team-carousel .owl-next,
+#team-carousel .owl-prev {
+  position: absolute;
+}
+
+#team-carousel .owl-next {
+  margin-top: -70px;
+  top: 0;
+  right: 0;
+  margin-left: 12px;
+}
+#team-carousel .owl-prev {
+  margin-top: -70px;
+  top: 0;
+  right: 5%;
+  @media (max-width: 1025px) {
+    right: 10%;
+  }
+}
+
+.home__regular {
+  &__title {
+    @include text-style(
+      48px,
+      500,
+      normal,
+      1.44px,
+      $primariy-color,
+      Cera Round Pro
+    );
+    text-transform: capitalize;
+  }
+}
+
+.tabs {
+  height: 680px;
+  @media (max-width: 1290px) {
+    height: 1000px;
+  }
+  @media (max-width:700px) {
+    height: auto;
+  }
+}
+
+.tab {
+  &__title {
+    &__p {
+      @include text-style(18px, 600, normal, none, $secondary-color, Open Sans);
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+
+    &__h3 {
+      @include text-style(24px, 700, normal, none, $primariy-color, Open Sans);
+    }
+  }
+}
+
+.modal__vidio {
+  margin-bottom: 400px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: $white-color;
+  background-color: $primariy-color;
+}
+
+.nav-link {
+  color: $black-color;
+  border: 2px solid $primariy-color;
+  border-radius: 41px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.nav-pills {
+  gap: 12px;
+}
+
+.nav-pills .nav-link {
+  color: black;
+  border-radius: 100px;
+}
+
+.carousel__2__title {
+  h6 {
+    @include text-style(
+      23px,
+      700,
+      130%,
+      0.92px,
+      $secondary-color,
+      Cera Round Pro
+    );
+  }
+
+  h2 {
+    @include text-style(48px, 400, 130%, 11.44px, $secondary-color);
+  }
+}
+
+.item__box {
+  h2 {
+    @include text-style(24px, 600, 26px);
+  }
+  p {
+    @include text-style(14px, 400, 22px, ireber);
+  }
+}
+
+.carousel__title__bottom {
+  img {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.updates {
+  h6 {
+    @include text-style(
+      23px,
+      700,
+      130%,
+      0.92px,
+      $secondary-color,
+      Cera Round Pro
+    );
+  }
+
+  h2 {
+    @include text-style(
+      48px,
+      500,
+      130%,
+      1.44px,
+      $primariy-color,
+      Cera Round Pro
+    );
+  }
+
+  &__card {
+    h5 {
+      @include text-style(
+        24px,
+        500,
+        32px,
+        none,
+        $secondary-color,
+        Cera Round Pro
+      );
+      text-transform: capitalize;
+    }
+    p {
+      @include text-style(14px, 400, 24px, none, #aaa);
+      margin-bottom: 20px;
+    }
+
+    a {
+      @include text-style(
+        16px,
+        700,
+        normal,
+        0.64px,
+        $primariy-color,
+        Cera Round Pro
+      );
+    }
+    span {
+      @include text-style(14px, 400, normal, none, $secondary-color, Open Sans);
+    }
+  }
+  &__btn {
+    background: transparent;
+    padding: 8px 32px;
+    border-radius: 100px;
+    margin-top: 50px;
+    border: 1px solid $primariy-color;
+
+    @include text-style(
+      16px,
+      700,
+      175%,
+      0.64px,
+      $secondary-color,
+      Cera Round Pro
+    );
+  }
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  color: $primariy-color;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  color: #fff;
+}
+.ovvl-carousel {
+  margin-top: 100px;
+}
+@use "https://fonts.googleapis.com/css?family=Muli:400,700&display=swap";
+
+// body {
+//     margin: 0;
+//     height: calc(100vh - 8em);
+//     font-family: "Muli", sans-serif;
+//     background-color: #f9f9f9;
+// }
